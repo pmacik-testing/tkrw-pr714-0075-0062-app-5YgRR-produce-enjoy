@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-oifx
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0062-tenant/tkrw-pr714-0075-0062-app/devfile-sample-oifx@sha256:ec095cd05ca68c0a7cc31d0a0f27e703c4acb118a7d984500ddc2217748f1852
+        name: my-nodejs
+        resources: {}
+status: {}
